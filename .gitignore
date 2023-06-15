@@ -1,0 +1,44 @@
+# Flask environment
+venv/
+env/
+
+# Logs
+*.log
+
+# Development server
+__pycache__/
+instance/
+
+# Compiled Python files
+*.pyc
+*.pyo
+*.pyd
+
+# Compiled C extensions
+*.so
+
+# Database files
+db.sqlite3
+
+# Secret keys
+secrets.ini
+secrets.py
+
+# Static files
+static/uploads/
+
+# Virtual environment
+.vscode/
+.idea/
+*.iml
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files (may vary depending on your IDE)
+*.sublime-project
+*.sublime-workspace
+*.pycharm/
+.idea/
+.vscode/
