@@ -28,7 +28,6 @@ secrets.py
 static/uploads/
 
 # Virtual environment
-.vscode/
 .idea/
 *.iml
 
@@ -41,4 +40,7 @@ Thumbs.db
 *.sublime-workspace
 *.pycharm/
 .idea/
-.vscode/
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
