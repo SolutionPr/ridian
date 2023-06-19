@@ -40,3 +40,10 @@ jobs:
                 labels: ['feature', 'automated pr']
               });
             }
+
+  run-test-suite:
+    uses: ./.github/workflows/run_test.yml
+    secrets: inherit
+    with:
+      ref: dev
+      save-coverage-badge: true
