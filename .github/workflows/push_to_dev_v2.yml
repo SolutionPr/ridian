@@ -1,4 +1,4 @@
-name: Pushed to Dev Branch (Ridian)
+name: Pushed to Dev Branch (Ridian) V2
 run-name: ${{ github.actor }} has pushed to Dev Branch
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - dev
 
 jobs:
-  create-pr:
+  create-pr-v2  :
     runs-on: ubuntu-latest
     steps:
       - name: Create Pull Request (main <-- dev)
@@ -41,3 +41,9 @@ jobs:
               });
             }
 
+  run-test-suite:
+    uses: ./.github/workflows/run_test.yml
+    secrets: inherit
+    with:
+      ref: dev
+      save-coverage-badge: true
