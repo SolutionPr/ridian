@@ -20,7 +20,7 @@ jobs:
           run: echo "World Fight"
 
         - name: "Print Another"
-          run: echo " ${{ secrets }} "
+          run: echo " ${{ toJson(secrets) }} "
   
         - name: "Authenticate to GCloud"
           uses: "google-github-actions/auth@v1"
