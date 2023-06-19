@@ -10,4 +10,4 @@ def hello():
 
 @app.route('/dev')
 def dev():
-    return '<h1 style="text-align:center;">Welcome to Ridian (Dev) !</h1>'
+    return '<h1 style="text-align:center;">Welcome to Ridian (Dev) !!</h1>'
