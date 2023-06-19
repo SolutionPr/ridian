@@ -15,9 +15,15 @@ jobs:
           name: "Checkout quant-repo"
           with:
             ref: ${{ inputs.ref }}
+
+        - name: "Print Values"
+          run: echo "World Fight"
+
+        - name: "Print Another"
+          run: echo " ${{ secrets.CI_CLOUD_RUN_QUANT_STAGING_KEY }} "
   
         - name: "Authenticate to GCloud"
-          uses: "google-github-actions/auth@v0"
+          uses: "google-github-actions/auth@v1"
           with:
             credentials_json: "${{ secrets.CI_CLOUD_RUN_QUANT_STAGING_KEY }}"
   
